@@ -1,1 +1,1 @@
-g++ -std=c++11 main.cpp MyApplication.cpp -o test -lquickfix -fexceptions -lpthread -finline-functions 
+ g++ -std=c++17 main.cpp MyApplication.cpp MyApplication.h -o test  -lquickfix -fexceptions -lpthread -finline-functions
