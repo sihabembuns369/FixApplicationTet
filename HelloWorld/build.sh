@@ -1,0 +1,1 @@
+ g++ -std=c++17 Initiator.cpp -o initiator -lquickfix && g++ -std=c++17 Acceptor.cpp -o Acceptor -lquickfix
