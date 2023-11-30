@@ -64,5 +64,11 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enable",
+    "editor.fontSize": 12,
+    "workbench.sideBar.location": "left",
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontSize": 11,
+    
 }

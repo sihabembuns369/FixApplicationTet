@@ -79,20 +79,20 @@ int main(int argc, char** argv) {
         FIX::SocketAcceptor acceptor(myApp, storeFactory, settings, logFactory);
         acceptor.start();
          myApp.sendNewOrderSingle(FIX::SessionID("FIX.4.4", "SENDER", "TARGET"));
-         FIX::SessionID sessionID("FIX.4.4", "YOUR_SENDER_COMP_ID", "YOUR_TARGET_COMP_ID");
+         FIX::SessionID sessionID("FIX.4.4", "ACCEPTOR", "INITIATOR");
         FIX::Session* session = FIX::Session::lookupSession(sessionID);
-if (session != nullptr) {
-    // Lakukan operasi pada sesi
-} else {
-    std::cerr << "Error: Session Not Found" << std::endl;
-}
+// if (session != nullptr) {
+//     // Lakukan operasi pada sesi
+// } else {
+//     std::cerr << "Error: Session Not Found" << std::endl;
+// }
 
             wait();
          acceptor.block();
 
          return 0;
     } catch (std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+        std::cerr << "Error bos: " << e.what() << std::endl;
         return 1;
     }
 
