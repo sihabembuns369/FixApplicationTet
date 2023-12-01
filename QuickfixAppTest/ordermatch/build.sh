@@ -1,0 +1,1 @@
+g++ -std=c++11 Application.cpp Market.cpp ordermatch.cpp -o order -lquickfix -fexceptions -lpthread -finline-functions 

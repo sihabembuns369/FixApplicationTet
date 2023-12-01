@@ -1,1 +1,1 @@
-./initiator initiator.cfg
+./initiator initiator.cfg SSL

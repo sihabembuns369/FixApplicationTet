@@ -1,1 +1,1 @@
-./acceptor acceptor.cfg
+./acceptor acceptor.cfg SSL
