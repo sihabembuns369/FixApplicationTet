@@ -1,0 +1,1 @@
+ g++ -std=c++17 main.cpp MyApplication.cpp MyApplication.h -o acceptor  -lquickfix -fexceptions -lpthread -finline-functions

@@ -1,0 +1,1 @@
+g++ -std=c++11 main.cpp Application.cpp -o initiator -lquickfix -fexceptions -lpthread -finline-functions 

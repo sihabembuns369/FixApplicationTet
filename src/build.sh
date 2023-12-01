@@ -1,1 +1,0 @@
- g++ -std=c++17 main.cpp MyApplication.cpp MyApplication.h -o test  -lquickfix -fexceptions -lpthread -finline-functions
