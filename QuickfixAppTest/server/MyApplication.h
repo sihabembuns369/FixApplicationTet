@@ -28,11 +28,7 @@
 #include "quickfix/Utility.h"
 #include "quickfix/Mutex.h"
 
-#include "quickfix/fix40/NewOrderSingle.h"
-#include "quickfix/fix41/NewOrderSingle.h"
-#include "quickfix/fix42/NewOrderSingle.h"
-#include "quickfix/fix43/NewOrderSingle.h"
-#include "quickfix/fix44/NewOrderSingle.h"
+
 #include "quickfix/fix50/NewOrderSingle.h"
 
 class Application: public FIX::Application, public FIX::MessageCracker
@@ -53,11 +49,6 @@ public:
     EXCEPT( FIX::FieldNotFound, FIX::IncorrectDataFormat, FIX::IncorrectTagValue, FIX::UnsupportedMessageType );
 
   // MessageCracker overloads
-  void onMessage( const FIX40::NewOrderSingle&, const FIX::SessionID& );
-  void onMessage( const FIX41::NewOrderSingle&, const FIX::SessionID& );
-  void onMessage( const FIX42::NewOrderSingle&, const FIX::SessionID& );
-  void onMessage( const FIX43::NewOrderSingle&, const FIX::SessionID& );
-  void onMessage( const FIX44::NewOrderSingle&, const FIX::SessionID& );
   void onMessage( const FIX50::NewOrderSingle&, const FIX::SessionID& );
 
   std::string genOrderID() {

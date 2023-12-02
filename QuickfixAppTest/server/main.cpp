@@ -54,7 +54,7 @@ int main( int argc, char** argv )
     Application application;
     FIX::FileStoreFactory storeFactory( settings );
      FIX::ScreenLogFactory logFactory( settings );
-    //FIX::FileLogFactory logFactory(settings);
+    // FIX::FileLogFactory logFactory(settings);
     std::unique_ptr<FIX::Acceptor> acceptor;
 #ifdef HAVE_SSL
     if (isSSL.compare("SSL") == 0)
