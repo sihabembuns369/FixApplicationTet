@@ -69,6 +69,6 @@
     "editor.fontSize": 12,
     "workbench.sideBar.location": "left",
     "editor.wordWrap": "on",
-    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontSize": 13,
     
 }
